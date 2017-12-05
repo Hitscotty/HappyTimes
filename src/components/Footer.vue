@@ -37,6 +37,9 @@
         <li>
           <a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a>
         </li>
+        <li>
+          <a href="https://hitscotty.co" target="_blank">about/contact</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -54,10 +57,12 @@
 <style scoped>
   #footer {
     border-top: 0.7px #c2e9ea solid;
-    bottom: 0px;
-    position: fixed;
+    top: 100vh;
     background-color: #c2e9ea;
-    padding: 30px;
+    padding: 10px;
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
   }
 
   h1,

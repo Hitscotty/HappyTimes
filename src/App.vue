@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="fluid container">
     <NavigationBar></NavigationBar>
-    <router-view/>
+    <div id="content" class="ui middle aligned center aligned grid">
+      <router-view/>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -27,7 +29,15 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    margin-top: 10px;
+    height: 100vh;
+  }
+
+  #content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
   }
 
 </style>

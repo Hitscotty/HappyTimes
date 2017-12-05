@@ -1,20 +1,17 @@
 <template>
-  <a class="item" v-bind:href="NavData.link">
-    {{NavData.title}}
-  </a>
+  <router-link :to="NavData.link" class="item"> {{NavData.title }}</router-link>
 </template>
 <script>
-  export default {
-    name: "NavItem",
-    props: {
-      NavData: {
-        type: Object,
-        default: () => ({
-          title: "default",
-          link: "/"
-        })
-      }
+export default {
+  name: "NavItem",
+  props: {
+    NavData: {
+      type: Object,
+      default: () => ({
+        title: "default",
+        link: "/"
+      })
     }
   }
-
+};
 </script>
