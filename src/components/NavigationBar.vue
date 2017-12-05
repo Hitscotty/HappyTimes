@@ -1,25 +1,18 @@
 <template>
   <div class="ui secondary  menu">
-    <a class="active item">
-      Home
-    </a>
-    <a class="item">
-      Messages
-    </a>
-    <a class="item">
-      Friends
-    </a>
+    <NavItem :NavData="{title:'Home',link:'/'}"></NavItem>
+    <NavItem :NavData="{title:'Previous Moments',link:'/'}"></NavItem>
+    <NavItem :NavData="{title:'Moment of the Day',link:'/'}"></NavItem>
     <div class="right menu">
       <SearchBar></SearchBar>
-      <a class="ui item">
-        Logout
-      </a>
+      <NavItem :NavData="{title:'Login',link:'/login'}"></NavItem>
     </div>
   </div>
 </template>
 
 <script>
   import SearchBar from './SearchBar'
+  import NavItem from './NavItem'
 
   export default {
     name: "NavigationBar",
@@ -29,7 +22,8 @@
       };
     },
     components: {
-      SearchBar
+      SearchBar,
+      NavItem
     }
   };
 

@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <NavigationBar></NavigationBar>
-
-    <img src="./assets/logo.png">
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import NavigationBar from "./components/NavigationBar";
+  import NavigationBar from "./components/NavigationBar"
+  import Footer from './components/Footer'
+
   export default {
     name: "app",
     components: {
-      NavigationBar
+      NavigationBar,
+      Footer
     }
   };
 
